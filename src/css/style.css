@@ -952,6 +952,8 @@ input[type=number] {
     .header-date span {
       font-size: 12px; }
   .header-location {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .header-title {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
