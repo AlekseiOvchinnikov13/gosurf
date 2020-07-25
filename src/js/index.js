@@ -10,22 +10,71 @@ $(function(){
     $('.slider-dots-head').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
-        asNavFor: '.header-slider'
+        asNavFor: '.header-slider',
+        responsive: [{
+            breakpoint: 961 ,
+            settings: "unslick"
+        }]
     });
-
     $('.surf-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: '<img class="slider-arrows slider-arrows-left" src="images/arrow_left.svg" alt="arrow">',
         nextArrow: '<img class="slider-arrows slider-arrows-right" src="images/arrow_right.svg" alt="arrow">',
-        asNavFor: '.slider-map,.holder-slider'
+        asNavFor: '.slider-map,.holder-slider',
+        responsive: [{
+                breakpoint: 1210,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 721,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
+            }]
     });
     $('.slider-map').slick({
         slidesToShow: 8,
         slidesToScroll: 1,
         arrows: false,
         asNavFor: '.surf-slider,.holder-slider',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 1103,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 721,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true
+                }
+            }]
     });
     $('.holder-slider').slick({
         slidesToShow: 1,
