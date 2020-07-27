@@ -149,6 +149,22 @@ $(function(){
         $('html,body').animate({scrollTop:$('.surf').offset().top+"px"},{duration:1E3});
     });
 
+    $('.surf-page-scroll').on('click', function() {
+        $('html,body').animate({scrollTop:$('.surf').offset().top+"px"},{duration:1E3});
+    });
+
+    $('.travel-page-scroll').on('click', function() {
+        $('html,body').animate({scrollTop:$('.travel').offset().top+"px"},{duration:1E3});
+    });
+
+    $('.sleep-page-scroll').on('click', function() {
+        $('html,body').animate({scrollTop:$('.sleep').offset().top+"px"},{duration:1E3});
+    });
+
+    $('.shop-page-scroll').on('click', function() {
+        $('html,body').animate({scrollTop:$('.shop').offset().top+"px"},{duration:1E3});
+    });
+
     new WOW({
         animateClass: 'animate__animated'
     }).init();

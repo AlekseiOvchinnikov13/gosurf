@@ -16,4 +16,3 @@
 
 npm i
 
-2. Вызвать gulp dev
