@@ -52,6 +52,7 @@ function scripts() {
     return gulp.src([
         jsDir
         ,'node_modules/slick-carousel/slick/slick.js'
+        ,'node_modules/wow.js/dist/wow.js'
         //,'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
         .pipe(concat('index.js'))

@@ -235,34 +235,6 @@
   margin-top: -86px;
 }
 
-.title{
-  span{
-    font-weight: 800;
-    font-size: 200px;
-    color: rgba($white-color, .02);
-    position: relative;
-    transform: translateX(-50px);
-    display: inline-block;
-  }
-  h3{
-    position: absolute;
-    top: 0;
-    right: -5px;
-    margin: 0;
-    color: $white-color;
-    font-size: 80px;
-    &::after{
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 80px;
-      height: 1px;
-      background-color: $cyan-color;
-    }
-  }
-}
-
 .surf-slider{
   padding-top: 110px;
   .slick-arrow{
@@ -420,6 +392,7 @@
   position: absolute;
   bottom: 35px;
   transform: translateX(-50%);
+  z-index: 1;
   &::before{
     content: "";
     position: absolute;

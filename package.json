@@ -17,8 +17,9 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
     "normalize.css": "^8.0.1",
-    "gulp-watch": "^5.0.1"
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
